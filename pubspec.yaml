@@ -1,6 +1,6 @@
 name: flutter_modules_generator
 description: A CLI tool to streamline and generate module structures for Flutter projects. This tool creates organized folder hierarchies and template files, including controllers, bindings, business logic, data models, services, and views. Designed to support both API and webview-based modules, it simplifies project setup and enforces a consistent code structure.
-version: 1.0.0
+version: 1.0.1
 repository: https://github.com/genss333/flutter_modules_generator.git
 
 environment:
