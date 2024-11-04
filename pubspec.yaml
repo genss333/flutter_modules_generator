@@ -16,4 +16,4 @@ dev_dependencies:
   test: ^1.24.0
 
 executables:
-  flutter_modules_generator: bin/main.dart
+  flutter_modules_generator: ./bin/main.dart
