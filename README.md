@@ -11,21 +11,21 @@ dart pub global run flutter_modules_generator
 
 
 ## Example for API
-|— modules_name/
-|—— controller/
+|— modules_name
+|—— controller
 |———— modules_controller.dart
-|———— bindings/
+|———— bindings
 |—————— modules_binding.dart
-|———— business /
+|———— business
 |—————— modules_business.dart
-|—— data/
-|———— api/
+|—— data
+|———— api
 |—————— modules_api.dart
-|———— models/
-|———— services/
+|———— models
+|———— services
 |—————— modules_service.dart
-|—— views/
-|———— widgets/
+|—— views
+|———— widgets
 |———— modules_view.dart
 
 ## Example for webview
