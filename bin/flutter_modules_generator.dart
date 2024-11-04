@@ -1,6 +1,6 @@
 import 'dart:io';
 
-import '../lib/flutter_modules_generator.dart';
+import 'package:flutter_modules_generator/flutter_modules_generator.dart';
 
 void main(List<String> arguments) {
   stdout.write('Enter the module name: ');
