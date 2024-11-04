@@ -11,22 +11,7 @@ dart pub global run flutter_modules_generator
 
 
 ## Example for API
-|— modules_name
-|—— controller
-|———— modules_controller.dart
-|———— bindings
-|—————— modules_binding.dart
-|———— business
-|—————— modules_business.dart
-|—— data
-|———— api
-|—————— modules_api.dart
-|———— models
-|———— services
-|—————— modules_service.dart
-|—— views
-|———— widgets
-|———— modules_view.dart
+![API Strucutre]([https://example.com/path/to/your/image.png](https://github.com/genss333/flutter_modules_generator/blob/main/api.png))
 
 ## Example for webview
 |— modules_name/
