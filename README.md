@@ -2,9 +2,14 @@
 
 ## CLI
 ### Install Package
+```.sh
 dart pub global activate flutter_modules_generator
+```
+
 ### Run Package
+```.sh
 dart pub global run flutter_modules_generator
+```
 
 
 ## Example for API
