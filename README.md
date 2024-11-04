@@ -11,7 +11,7 @@ dart pub global run flutter_modules_generator
 
 
 ## Example for API
-|— modules_name
+|— modules_name\n
 |—— controller
 |———— modules_controller.dart
 |———— bindings
