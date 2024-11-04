@@ -3,16 +3,8 @@ in `lib/`, and example unit test in `test/`.
 
 # flutter_modules_generator
 
-## setuup
-git clone https://github.com/genss333/flutter_modules_generator.git
-
-### create folder in lib/
-    |--- lib/
-    |------- bin/
-    |----------- clone this here!!
-
 ## CLI
-dart ../bin/generate_module_structure.dart 
+dart run generate_module_structure.dart 
 
 
 ## Example for API
