@@ -4,7 +4,10 @@ in `lib/`, and example unit test in `test/`.
 # flutter_modules_generator
 
 ## CLI
-dart run generate_module_structure.dart 
+### Install Package
+dart pub global activate flutter_modules_generator
+### Run Package
+dart pub global run flutter_modules_generator
 
 
 ## Example for API
