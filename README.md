@@ -15,7 +15,7 @@ dart pub global run flutter_modules_generator
 ## Example for API
 - modules_name/
   - controller/
-  - modules_controller.dart
+    - modules_controller.dart
     - bindings/
         - modules_binding.dart
     - business/
@@ -33,7 +33,7 @@ dart pub global run flutter_modules_generator
 ## Example for webview
 - modules_name/
   - controller/
-  - modules_controller.dart
+    - modules_controller.dart
     - bindings/
         - modules_binding.dart
     - business/
