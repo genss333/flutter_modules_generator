@@ -16,10 +16,10 @@ dart pub global run flutter_modules_generator
 - modules_name/
   - controller/
   - modules_controller.dart
-  - bindings/
-      - modules_binding.dart
-  - business/
-      - modules_business.dart
+    - bindings/
+        - modules_binding.dart
+    - business/
+        - modules_business.dart
   - data/
       - api/
           - modules_api.dart
@@ -34,10 +34,10 @@ dart pub global run flutter_modules_generator
 - modules_name/
   - controller/
   - modules_controller.dart
-  - bindings/
-      - modules_binding.dart
-  - business/
-      - modules_business.dart
+    - bindings/
+        - modules_binding.dart
+    - business/
+        - modules_business.dart
   - data/
       - models/
       - webview_services/
