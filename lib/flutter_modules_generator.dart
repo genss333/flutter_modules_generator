@@ -24,6 +24,37 @@ void createFile(String path, String folder, String file) {
   print('Created: $path');
 }
 
+void moveToController(String basePath, List<String> foldersToMove) {
+  final controllerPath = '$basePath/controller';
+  for (var folder in foldersToMove) {
+    final sourcePath = '$basePath/$folder';
+    final destinationPath = '$controllerPath/$folder';
+
+    final sourceDirectory = Directory(sourcePath);
+    final destinationDirectory = Directory(destinationPath);
+
+    if (sourceDirectory.existsSync()) {
+      // Ensure the destination directory exists
+      if (!destinationDirectory.existsSync()) {
+        destinationDirectory.createSync(recursive: true);
+      }
+
+      // Move each file to the new destination
+      sourceDirectory.listSync().forEach((entity) {
+        if (entity is File) {
+          final newPath =
+              '${destinationDirectory.path}/${entity.uri.pathSegments.last}';
+          entity.renameSync(newPath);
+        }
+      });
+
+      // Delete the old directory after moving files
+      sourceDirectory.deleteSync();
+      print('Moved $folder to $controllerPath');
+    }
+  }
+}
+
 String getFileContent(String folder, String file) {
   switch (folder) {
     case 'controller':

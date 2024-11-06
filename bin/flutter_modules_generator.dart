@@ -60,4 +60,7 @@ void main(List<String> arguments) {
   }
 
   createModuleStructure(modulesPath, moduleStructure);
+
+  // After creation, move `business` and `bindings` into `controller`
+  moveToController(modulesPath, ['bindings', 'business']);
 }
