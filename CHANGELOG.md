@@ -7,3 +7,6 @@
 
 ## 1.0.7
 - Refactor README.md
+
+## 1.0.8
+- Refactor Modules Structure
