@@ -19,7 +19,6 @@ void createModuleStructure(String basePath, Map<String, dynamic> structure) {
 }
 
 void createFile(String path, String folder, String file) {
-  print('folder:$folder/$file');
   File(path).writeAsStringSync(getFileContent(folder, file));
   print('Created: $path');
 }
@@ -68,7 +67,9 @@ class ${file.split('_')[0].capitalize()}Controller extends GetxController {}
 class ${file.split('_')[0].capitalize()}Binding implements Binding {
   @override
   List<Bind> dependencies() {
-    return [];
+    return [
+      Bind.lazyPut(() => ${file.split('_')[0].capitalize()}Controller()),
+    ];
   }
 }
 ''';
@@ -77,7 +78,9 @@ class ${file.split('_')[0].capitalize()}Binding implements Binding {
 extension ${file.split('_')[0].capitalize()}Business on ${file.split('_')[0].capitalize()}Controller {}
 ''';
     case 'api':
-      return '''
+      return '''import 'package:dio_helper_api/dio_helper.dart';
+import 'package:flutter/material.dart';
+
 class ${file.split('_')[0].capitalize()}Api {
   Dio dioApi() {
     //get base url from env
@@ -89,7 +92,7 @@ class ${file.split('_')[0].capitalize()}Api {
       accessToken: '',
       refreshToken: '',
       onTokenRefreshed: (newToken) {
-        debugprint('New token: \$newToken');
+        debugPrint('New token: \$newToken');
       },
       serverCertificate: '',
       connectTimeout: 180,
@@ -154,7 +157,14 @@ class ${file.split('_')[0].capitalize()}View extends GetView<${file.split('_')[0
 
   @override
   Widget build(BuildContext context) {
-    return Container(); // Placeholder for the widget's build method
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('${file.split('_')[0].capitalize()}View'),
+      ),
+      body: Center(
+        child: Text('${file.split('_')[0].capitalize()}View'),
+      ),
+    );
   }
 }
 ''';
